@@ -27,10 +27,12 @@ Class Saasu_model extends CI_Model{
 //                .$this->wsaccesskey."&fileuid=".$this->fileid.
 //                "&&searchfieldname=emailaddress&searchfieldnamebeginswith=".$usr_email;
 
+//    print_r($result['contactList']->contactListItem[0]->emailAddress->asXML());//->asXML());
         $saasu_pwd = $result['contactList']->contactListItem[0]->customField1;
-        $saasu_contactuid = $result['contactList']->contactListItem[0]->contactUid;
-        $saasu_firstname = $result['contactList']->contactListItem[0]->givenName;
-        $saasu_email = $result['contactList']->contactListItem[0]->EmailAddress;
+        $saasu_contactuid = $result['contactList']->contactListItem[0]->contactUid->asXML();
+        $saasu_firstname = $result['contactList']->contactListItem[0]->givenName->asXML();
+        $saasu_email = $result['contactList']->contactListItem[0]->emailAddress->asXML();
+
 
         if(md5($password) == $saasu_pwd){
             
@@ -40,6 +42,7 @@ Class Saasu_model extends CI_Model{
                 'firstname' => $saasu_firstname,
                 'is_logged_in' => true
                 );
+            
 
                 //Create a new session
                 $this->session->set_userdata($session);
