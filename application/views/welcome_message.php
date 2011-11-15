@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+<title>Welcome to CodeIgniter REST Client</title>
 
 <style type="text/css">
 
@@ -45,17 +43,19 @@ code {
 </head>
 <body>
 
-<h1>Welcome to CodeIgniter!</h1>
+<h1>Welcome to CodeIgniter REST Client!</h1>
 
-<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+<p>The page you are looking at is being generated dynamically by CodeIgniter with <a href="http://philsturgeon.co.uk/" target="_blank">Phil Sturgeon</a>'s REST client library included.</p>
 
-<p>If you would like to edit this page you'll find it located at:</p>
-<code>application/views/welcome_message.php</code>
+<p>Below are a few examples of the REST client library in use with some publically available REST services.</p>
 
-<p>The corresponding controller for this page is found at:</p>
-<code>application/controllers/welcome.php</code>
+<ul>
+	<li><a href="<?php echo site_url('twitter/show_user/philsturgeon');?>">Twitter (profile)</a> - show Phil's user info</li>
+	<li><a href="<?php echo site_url('twitter/tweets/philsturgeon');?>">Twitter (tweets)</a> - show Phil's tweets</li>
+	<li><a href="<?php echo site_url('test');?>">General Test</a> - enter any REST service you like</li>
+</ul>
 
-<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="http://codeigniter.com/user_guide/">User Guide</a>.</p>
 
 
 <p><br />Page rendered in {elapsed_time} seconds</p>

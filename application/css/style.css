@@ -1,0 +1,224 @@
+body {
+    background: #D6F0FF;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+
+}
+#login_form {
+    width: 300px;
+    background: #ffffff url(../images/login_bg.jpg) repeat-x 0 0;
+    border: 1px solid gray;
+    margin: 150px auto 0;
+    padding: 1em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.content {
+    width: 960px;
+    background: #ffffff url(../images/login_bg.jpg) repeat-x 0 0;
+    border: 1px solid #1D72A3;
+    margin: 50px auto 0;
+    padding: 1em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+h1,h2,h3,h4,h5 {
+    margin-top: 0;
+    font-family: arial black, arial;
+    text-align: center;
+    color: #55A6D5;
+}
+
+input.login {
+    display: block;
+    margin: 0 0 1em 0;
+    width: 280px;
+    border: 1px solid #1D72A3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: #EDF2F7;
+}
+
+
+
+/*input {
+    display: block;
+    margin: 0 0 0 0;
+    width: 40px;
+    border: 5px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    padding: 0em;
+}
+*/
+input[type=submit], form a {
+    border: none;
+    margin-right: 1em;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    background: #55A6D5;
+    color: white;
+    box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;
+    border-radius: 0 1px 0 white;
+}
+
+#button a{
+    border: none;
+    margin-right: 1em;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    background: #55A6D5;
+    color: white;
+    box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;
+    border-radius: 0 1px 0 white;
+}
+
+input[type=submit]:hover, form a:hover {
+    background: #55A6D5;
+    cursor: pointer;
+}
+
+
+
+
+/* Validation error messages */
+
+.error {
+    color: #FF0000;
+    font-size: 15px;
+}
+
+fieldset {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+    display: block;
+}
+
+h1 {
+    text-shadow: 0 1px 0 white;
+}
+
+
+#head {
+    background: #FFFFFF;
+    border-bottom: 1px solid white;
+    position: relative;
+    top: 0;
+    /*width: 100%;*/
+    padding: .7em .7em .7em 2em;
+}
+
+
+#menu{
+
+}
+
+ul#menu {
+    /*width: 100%;*/
+    height: 43px;
+    font-size: 0.8em;
+    font-family: arial black, arial;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul#menu li {
+    display: block;
+    float: left;
+    margin: 0 0 0 5px;
+}
+ul#menu li a {
+    height: 43px;
+    color: #55A6D5;
+    text-decoration: none;
+    display: block;
+    float: left;
+    line-height: 200%;
+    padding: 8px 15px 0;
+}
+ul#menu li a:hover {
+    color: #1D72A3;
+}
+ul#menu li a.current{
+    color: #FFF;
+    padding: 5px 15px 0;
+}
+
+
+/* tables */
+table.tablesorter {
+    font-family:arial;
+    background-color: #CDCDCD;
+    margin:10px 0pt 15px;
+    font-size: 8pt;
+    width: 100%;
+    text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #e6EEEE;
+    border: 1px solid #FFF;
+    font-size: 8pt;
+    padding: 4px;
+}
+table.tablesorter thead tr .header {
+    background-image: url(../images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+table.tablesorter tbody td {
+    color: #3D3D3D;
+    padding: 4px;
+    background-color: #FFF;
+    vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+    background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(../images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+    background-image: url(../images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}
+
+/*loading screen styles*/
+#loadingScreen {
+    background: url(../images/loading.gif) no-repeat 5px 8px;
+    padding-left: 25px;
+}
+
+.form label{
+    float: left;
+    width: 180px;
+    font-weight: bold;
+}
+.form input, .form textarea{
+    width: 180px;
+    margin-bottom: 5px;
+}
+.form textarea{
+    width: 250px;
+    height: 50px;
+}
+.form br{
+    clear: left;
+}
