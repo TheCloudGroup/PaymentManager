@@ -2,7 +2,7 @@
 Class mobile extends CI_Controller{
     
     function index(){
-        $this->input->post();
+        print_r($this->input->post());
     }
 }
 ?>
